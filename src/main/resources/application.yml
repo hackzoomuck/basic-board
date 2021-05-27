@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://localhost:1106/basicBoard"
+    username: root
+    password: root
+    auto-commit: false
+
+server:
+  port: 7070
+
