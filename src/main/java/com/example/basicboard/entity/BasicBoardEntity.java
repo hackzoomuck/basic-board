@@ -1,4 +1,4 @@
-package entity;
+package com.example.basicboard.entity;
 
 import javax.persistence.*;
 import lombok.Getter;
@@ -9,6 +9,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class BasicBoardEntity {
+
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "title_id", length = 11, nullable = false)
@@ -25,4 +26,8 @@ public class BasicBoardEntity {
 
   @Column(name = "contents", length = 100, nullable = false)
   private String contents;
+
+  public BasicBoardEntity() {
+
+  }
 }
