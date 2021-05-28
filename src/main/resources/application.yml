@@ -9,3 +9,14 @@ spring:
 server:
   port: 7070
 
+jpa:
+  database-platform: org.hibernate.dialect.MYSQL5InnoDBDialect
+  open-in-view: false
+  show-sql: true
+  hibernate:
+    format_sql: true
+    ddl-auto: create
+    order_inserts: true
+    order_updates: true
+
+
